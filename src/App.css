@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap');
+
+:root {
+    --section-padding: 3rem;
+    --engineering-primary-color: #CD0404;
+}
+
+/* --- CUSTOM CSS RESET --- */   
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* --- GENERAL RULES --- */
+body {
+    font-family: 'Open Sans', sans-serif;
+    /* height: 3000px; */
+}
+html {
+    scroll-behavior: smooth;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #F2ECFF;
+}
+
+/* --- CUSTOM GENERAL COMPONANTS --- */
+/* 1- Buttons */
+.btn {
+    color: #ced4da;
+    background-color: transparent;
+    border: 1px solid #ced4da;
+    margin-right: 50px;
+    font-weight: 500;
+    font-size: 15px;
+    padding: 10px 0px;
+    text-align: center;
+    transition: all .5s ease;
+    cursor: pointer;
+    text-transform: uppercase;
+    line-height: 1;
+    border-radius: 5px;
+}

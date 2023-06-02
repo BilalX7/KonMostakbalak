@@ -1,0 +1,16 @@
+.eng-services {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+    text-align: center;
+    /* background-color: var(--engineering-primary-color); */
+    /* background: url(../../assets/imgs/slanted-gradient.svg);
+    background-size: cover; */
+}
+.eng-services .eng-services-icon {
+    font-size: 7rem;
+    width: 100%;
+    padding: 0.5rem;
+}
+.eng-services .card h4 {
+    color: var(--engineering-primary-color) !important;
+}

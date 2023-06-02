@@ -1,0 +1,47 @@
+.main-heading {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+.main-heading span {
+    font-size: 3rem;
+    color: #1a2238;
+    margin-bottom: 1.5rem;
+}
+.main-heading h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    position: relative;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+} 
+.main-heading h2::before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    background-color: #797e89;
+    width: 100px;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.main-heading h2::after {
+    position: absolute;
+    content: "";
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #797e89;
+    bottom: -27px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: white;
+    border: 2px solid #797e89;
+}
+.main-heading p {
+    color: #797e89;
+    font-size: 20px;
+    letter-spacing: 1.5px;
+}

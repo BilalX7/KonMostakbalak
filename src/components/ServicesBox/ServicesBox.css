@@ -1,0 +1,28 @@
+.services .services-container .icon-holder {
+    height: 200px;
+}
+.services .services-container .feat {
+    margin-bottom: 45px;
+}
+.services .services-container .icon-behind {
+    font-size: 12rem;
+    color: #353a3e;
+    color: #e9ecef;
+}
+.services .services-container .icon-front {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 0;
+    font-size: 5rem;
+    color: #41464a;
+}
+.services .services-container h2 {
+    color: #00000080;
+    color: #ffc400;
+}
+.services .services-container p {
+    color: #333;
+    width: 70%;
+    margin: 0 auto;
+}

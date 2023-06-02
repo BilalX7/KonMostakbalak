@@ -1,0 +1,105 @@
+.main-header .container .main-nav .ulElements li .link-items {
+    letter-spacing: .3px;
+    position: relative;
+    padding: 10px 25px 13px;
+    font-size: 14px;
+    color: rgb(242, 236, 255);
+    background-color: transparent;
+    border: none;
+    border-radius: 22px;
+    transition: font-weight 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+}
+.main-header .container .main-nav .ulElements li .link-items:hover {
+    color: #495057;
+    background-color: #f1f3f5;
+}
+.main-header .main-nav .list-items .sub-menu {
+    display: none;
+    position: relative;
+}
+.main-header .main-nav .list-items .sub-menu ul {
+    padding-left: 0;
+}
+.sub-menu::before {
+    content: "";
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent rgb(248, 248, 255, 1) transparent;
+    position: absolute;
+    right: 50%;
+    transform: translateX(50%);
+    top: -17px;
+}
+.main-header .main-nav .list-items.drop-menu {
+    position: relative;
+}
+.main-header .main-nav .list-items .sub-menu a {
+    color: #242424;
+    transition: all .3s ease-in;
+}
+.main-header .main-nav .list-items.drop-menu:hover .sub-menu,
+.main-header .main-nav .list-items.drop-menu:focus .sub-menu {
+    display: flex;
+    position: absolute;
+    background-color: rgb(248, 248, 255, 1);
+    width: 100%;
+    margin-top: 20px;
+    box-shadow: 0 0 7px #ddd;
+    border-radius: 10px;
+    padding: 20px 5px 20px 10px;
+}
+.main-header .main-nav .list-items .sub-menu .sub-menu-items {
+    margin-bottom: 15px;
+    padding: 10px;
+    position: relative;
+}
+.main-header .main-nav .list-items .sub-menu .sub-menu-items::before {
+    content: "";
+    position: absolute;
+    width: 80%;
+    height: 1px;
+    bottom: -5px;
+    transform: scale(0, 1);
+    transform-origin: left;
+    transition: transform ease-in-out 250ms;
+}
+.main-header .main-nav .list-items .sub-menu .sub-menu-items:hover::before {
+    transform: scale(1, 1);
+}
+.main-header .main-nav .list-items .sub-menu .sub-menu-eng::before {
+    background-color: #CD0404;
+}
+.main-header .main-nav .list-items .sub-menu .sub-menu-edu::before {
+    background-color: #19c8fa;
+}
+.main-header .main-nav .list-items .sub-menu .sub-menu-mar::before {
+    background-color: #00337C;
+}
+.main-header .sub-menu .sub-menu-eng:hover .sub-menu-link{
+    color: #CD0404;
+    padding-left: 8px;
+}
+.main-header .sub-menu .sub-menu-edu:hover .sub-menu-link{
+    color: #19c8fa;
+    padding-left: 8px;
+}
+.main-header .sub-menu .sub-menu-mar:hover .sub-menu-link{
+    color: #00337C;
+    padding-left: 8px;
+}
+.main-header .main-nav .list-items .sub-menu .sub-menu-items:last-child {
+    margin-bottom: 0;
+}
+.main-nav li .link-items:hover {
+    color: #10cab7;
+}
+.checkbtn {
+    font-size: 30px;
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+.link-items.active {
+    color: #495057;
+    background-color: #f1f3f5;
+}

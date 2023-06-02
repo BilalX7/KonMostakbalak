@@ -1,0 +1,8 @@
+.services {
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+    background-color: #f6f6f6;
+    background-color: #f6f6f659;
+    text-align: center;
+}
+

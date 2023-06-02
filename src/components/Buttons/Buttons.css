@@ -1,0 +1,20 @@
+.eng-btn {
+    display: block;
+    border: 3px solid transparent;
+    width: fit-content;
+    margin: 20px auto 30px;
+    font-weight: 700;
+    font-size: 18px;
+    padding: 10px 30px;
+    border-radius: 6px;
+    transition: 0.3s;
+    color: #CD0404;
+    border-color: #CD0404;
+    background: linear-gradient(to right, #CD0404 50%, white 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+}
+.eng-btn:hover {
+    background-position: left bottom;
+    color: #fff;
+}

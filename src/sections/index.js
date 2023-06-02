@@ -1,0 +1,7 @@
+export {default as Header} from './Header/Header'
+export {default as Hero} from './Hero/Hero'
+export {default as Departments} from './Departments/Departments'
+export {default as Services} from './Services//Services'
+export {default as AboutUs} from './AboutUs/AboutUs'
+export {default as Contact} from './Contact/Contact'
+export {default as EngServices} from './EngServices/EngServices'

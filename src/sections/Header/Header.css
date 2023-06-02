@@ -1,0 +1,88 @@
+/* --- START HEADER --- */
+.main-header {
+    padding: 5px 10px;
+    box-shadow: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: all 0.3s ease-in-out;
+    background-color: #3d4146;;
+    box-shadow: 0 0 10px #ddd;
+}
+.main-header.scrolled {
+    background-color: rgb(248, 248, 255, 1);
+    box-shadow: 0 0 10px #ddd;
+}
+@keyframes change-color {
+    from {
+        background-color: #fff;
+    }
+    to {
+        background-color: rgb(248, 248, 255, 1);
+    }
+  }
+.main-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.main-header .container .logo img {
+    width: 70px;
+}
+.main-header .container .main-nav .ulElements {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: auto;
+}
+
+@media (max-width: 767px) {
+    .checkbtn {
+        display: block;
+    }
+    .main-nav {
+        position: absolute;
+        top: 100%;
+        /* left: -100%; */
+        right: 0;
+        border-top: 1px solid rgba(0,0,0,.1);
+        transition: all .5s ease-in-out;
+    }
+    .main-nav .ulElements {
+        position: absolute;
+        left: 0;
+        right: 0;
+        background-color: gray;
+        background: linear-gradient(119deg, rgba(173,181,189,1) 0%, rgba(73,80,87,1) 100%);
+        transition: all .5s;
+        flex-direction: column;
+        padding-left: 0;
+        min-height: 89vh;
+    }
+    .main-nav .list-items {
+        width: 100%;
+        padding: 20px 0;
+        text-align: center;
+    }
+    .main-nav .list-items .list-items {
+        color: #242424;
+    }
+    .main-header .main-nav .list-items.drop-menu:hover .sub-menu {
+        position: initial;
+    }
+    #check:checked ~ .main-nav {
+        left: 0;
+    }
+    .main-header .main-nav .list-items.drop-menu:hover .sub-menu,
+    .main-header .main-nav .list-items.drop-menu:focus .sub-menu {
+        width: 50%;
+        transform: translateX(50%);
+        justify-content: center;
+    }
+}
+
+#check {
+    display: none;
+}
